@@ -18,6 +18,17 @@ This repository is a GitHub template. When you create a new repository from it, 
 
 The workflow only runs on repositories created from the template (the `if: ${{ !github.event.repository.is_template }}` guard skips the template itself), and after creating the issues it removes itself and the `.github/bootstrap-issues/` folder in a cleanup commit so it never runs again.
 
+## Coding standards
+
+This repository expects documentation and comments to explain intent, constraints, and decisions instead of repeating the code. In other words: comment the why, not the what.
+
+- `.github/instructions/astro.instructions.md` — component structure, reusable `.astro` `Props` contracts, and comment philosophy
+- `.github/instructions/drizzle.instructions.md` — TSDoc/JSDoc rules for exported functions in `db/` and `src/lib/`, including the injectable `db` parameter pattern
+- `.github/instructions/style.instructions.md` — TypeScript formatting conventions and the repo's explicit typing expectations
+- `.github/copilot-instructions.md` — broader contributor guidance and project workflow
+
+Outdated comments are treated like bugs: update or remove them whenever the related code changes.
+
 ## Getting started
 
 Install dependencies once with Node.js 22.13 or later:

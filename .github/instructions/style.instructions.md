@@ -46,6 +46,13 @@ ALL UI components MUST use dark theme colors:
 - Use semantic grouping: layout, spacing, colors, typography
 - Keep utility combinations readable and maintainable
 
+## TypeScript and documentation conventions
+
+- Prefer `interface` for object shapes and `import type` for type-only imports
+- Keep exported functions, props, and helpers explicitly typed; avoid new `any` usage
+- Use comments to explain intent, trade-offs, or non-obvious constraints; do not add restatements of the code below
+- Treat stale comments as bugs: update or remove them when the related code changes
+
 ## Modern UI Patterns
 
 - Rounded corners: `rounded-lg`, `rounded-xl`, `rounded-2xl`
