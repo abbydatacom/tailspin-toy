@@ -27,6 +27,18 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      "@typescript-eslint/no-explicit-any": [
+        "error",
+        { ignoreRestArgs: true },
+      ],
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { prefer: "type-imports", disallowTypeAnnotations: false },
+      ],
+      "@typescript-eslint/consistent-type-definitions": [
+        "error",
+        "interface",
+      ],
     },
   },
 
